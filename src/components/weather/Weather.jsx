@@ -22,7 +22,7 @@ const Weather = () => {
     }
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${
       searchBox[0].value
-    }&appid=${import.meta.env.API_KEY}`;
+    }&appid=${import.meta.env.VITE_API_KEY}`;
 
     let response = await fetch(apiUrl);
 
